@@ -12,6 +12,50 @@ body {
   background-size: cover;
 }
 
+.top-page{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 88px;
+  width: 100%;
+  background-color: #000;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-bar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.nav-bar ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
 svg {
-  filter: invert(100%);
+  filter: invert(0%);
+  /* background-color: #e8a7a7; */
+  color: #fff;
+  font-size: 20px;
+  height: 14px;
+  width: 100%;
 }
