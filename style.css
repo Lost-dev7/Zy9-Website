@@ -23,9 +23,7 @@ body {
 }
 
 .nav-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 18px;
 }
 
 .nav-bar ul {
@@ -34,7 +32,7 @@ body {
   justify-content: space-between;
   list-style: none;
   flex-direction: row;
-  gap: 12px;
+  gap: 42px;
 }
 
 .nav-bar ul li {
@@ -43,12 +41,29 @@ body {
   justify-content: space-between;
   flex-direction: row;
   list-style: none;
-  gap: 10px;
+  gap: 8px;
 }
 
 .nav-bar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #ffff;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+  border-radius: 50px;
+}
+
+.nav-bar ul li svg {
+  height: 25px;
+  width: 100%;
+}
+
+.nav-bar ul:hover li a {
+  opacity: 0.3;
+}
+
+.nav-bar ul li a:hover {
+  opacity: 1;
+  transform: scale(1.07);
 }
 
 svg {
@@ -56,6 +71,36 @@ svg {
   /* background-color: #e8a7a7; */
   color: #fff;
   font-size: 20px;
-  height: 14px;
+  height: 15px;
+  width: 100%;
+}
+
+.btn-login {
+  box-shadow: 0 0 10px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 44px;
+  width: 135px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  gap: 5px;
+  margin-right: 25px;
+  transition: all 2s ease;
+}
+
+.btn-login:hover {
+  background-color: #ff2626;
+  box-shadow: 0 0 10px #ff2626;
+}
+
+.btn-login span {
+  margin-right: 27px;
+}
+
+.btn-login svg {
+  height: 24px;
   width: 100%;
 }
